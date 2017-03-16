@@ -9,7 +9,7 @@ import static com.example.android.courtcounter.R.id.team_a_score;
 
 public class MainActivity extends AppCompatActivity {
 
-    int score = 0;
+    int scoreTeamA = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,24 +28,24 @@ public class MainActivity extends AppCompatActivity {
      *  This method is called when the +3 button is clicked.
      */
     public void threepoints(View view) {
-        score = score + 3;
-        displayForTeamA (score);
+        scoreTeamA = scoreTeamA + 3;
+        displayForTeamA (scoreTeamA);
     }
 
     /**
      *  This method is called when the +2 button is clicked.
      */
     public void twopoints(View view) {
-        score = score + 2;
-        displayForTeamA (score);
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA (scoreTeamA);
     }
 
     /**
      *  This method is called when the +1 button is clicked.
      */
     public void onepoint(View view) {
-        score = score + 1;
-        displayForTeamA (score);
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA (scoreTeamA);
     }
 
 
